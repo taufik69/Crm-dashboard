@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url(./tokens.css);
+@import url(./typography.css);
+@import url(./typography-classes.css);
+
+:root {
+  /* =========================
+     PRIMARY
+  ========================= */
+  --primary: #5e81f4;
+  --primary-dark: #1c1d21;
+  --primary-grey: #8181a5;
+
+  /* States */
+  --primary-hover: #1c1d211a;
+  --primary-outline: #5e81f4;
+
+  /* =========================
+     SECONDARY
+  ========================= */
+  --secondary-yellow: #f4be5e;
+  --secondary-green: #7ce7ac;
+  --secondary-red: #ff808b;
+  --secondary-purple: #9698d6;
+
+  /* Soft variants */
+  --secondary-yellow-soft: #fff6e9;
+  --secondary-green-soft: #ecfdf3;
+  --secondary-red-soft: #fff1f2;
+  --secondary-purple-soft: #f1f2ff;
+
+  /* =========================
+     BACKGROUND
+  ========================= */
+  --bg-main: #f6f6f6;
+  --bg-light: #f5f5fa;
+  --bg-white: #ffffff;
+
+  /* =========================
+     OUTLINE / BORDER
+  ========================= */
+  --outline: #f0f0f3;
+  --outline-rest: #efeff2;
+  --outline-white: #ffffff;
+
+  /* =========================
+     TEXT
+  ========================= */
+  --text-primary: #1c1d21;
+  --text-secondary: #8181a5;
+  --text-inverse: #ffffff;
+}
