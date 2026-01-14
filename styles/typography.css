@@ -1,12 +1,45 @@
 /* typography.css */
 :root {
-  /* Headings */
+  /* =====================
+     FONT WEIGHTS
+  ===================== */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* =====================
+     FONT SIZES
+  ===================== */
+  --fs-32: 32px;
+  --fs-26: 26px;
+  --fs-24: 24px;
+  --fs-18: 18px;
+  --fs-16: 16px;
+  --fs-14: 14px;
+  --fs-12: 12px;
+
+  /* =====================
+     LINE HEIGHTS
+  ===================== */
+  --lh-42: 42px;
+  --lh-38: 38px;
+  --lh-32: 32px;
+  --lh-28: 28px;
+  --lh-24: 24px;
+  --lh-20: 20px;
+  --lh-16: 16px;
+  --lh-21: 21px;
+
+  /* =====================
+     HEADINGS
+  ===================== */
   --text-h1-size: var(--fs-32);
   --text-h1-lh: var(--lh-42);
   --text-h1-weight: var(--fw-bold);
 
-  --text-h2-size: 26px;
-  --text-h2-lh: 38px;
+  --text-h2-size: var(--fs-26);
+  --text-h2-lh: var(--lh-38);
   --text-h2-weight: var(--fw-bold);
 
   --text-h3-size: var(--fs-24);
@@ -21,7 +54,9 @@
   --text-h5-lh: var(--lh-24);
   --text-h5-weight: var(--fw-bold);
 
-  /* Body */
+  /* =====================
+     BODY
+  ===================== */
   --text-body-lg-size: var(--fs-16);
   --text-body-lg-lh: var(--lh-24);
   --text-body-lg-weight: var(--fw-regular);
@@ -34,22 +69,21 @@
   --text-body-sm-lh: var(--lh-16);
   --text-body-sm-weight: var(--fw-regular);
 
-  /* Caption */
+  /* =====================
+     CAPTION
+  ===================== */
   --text-caption-size: var(--fs-12);
   --text-caption-lh: var(--lh-16);
   --text-caption-weight: var(--fw-medium);
 
-  /* Button */
-  --text-button-size: var(--fs-14);
-  --text-button-lh: var(--lh-20);
-  --text-button-weight: var(--fw-semibold);
+  /* =====================
+     BUTTON LABELS
+  ===================== */
+  --btn-label-lg-size: 14px;
+  --btn-label-lg-weight: 700;
+  --btn-label-lg-lh: 20px;
 
-  /* button lable lg */
-  --btn-label-lg: 14px;
-  --btn-labe-lg-w: 700;
-  --btn-labe-lg-lh: 0px;
-  /* button lable lg */
-  --btn-label-lg: 12px;
-  --btn-labe-lg-w: 700;
-  --btn-labe-lg-lh: 0px;
+  --btn-label-sm-size: 12px;
+  --btn-label-sm-weight: 700;
+  --btn-label-sm-lh: 16px;
 }

@@ -1,7 +1,7 @@
-@import "tailwindcss";
 @import url(./tokens.css);
 @import url(./typography.css);
 @import url(./typography-classes.css);
+@import "tailwindcss";
 
 :root {
   /* =========================
@@ -49,4 +49,29 @@
   --text-primary: #1c1d21;
   --text-secondary: #8181a5;
   --text-inverse: #ffffff;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-grey: var(--primary-grey);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-outline: var(--primary-outline);
+  --color-secondary-yellow: var(--secondary-yellow);
+  --color-secondary-green: var(--secondary-green);
+  --color-secondary-red: var(--secondary-red);
+  --color-secondary-purple: var(--secondary-purple);
+  --color-secondary-yellow-soft: var(--secondary-yellow-soft);
+  --color-secondary-green-soft: var(--secondary-green-soft);
+  --color-secondary-red-soft: var(--secondary-red-soft);
+  --color-secondary-purple-soft: var(--secondary-purple-soft);
+  --color-bg-main: var(--bg-main);
+  --color-bg-light: var(--bg-light);
+  --color-bg-white: var(--bg-white);
+  --color-outline: var(--outline);
+  --color-outline-rest: var(--outline-rest);
+  --color-outline-white: var(--outline-white);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-inverse: var(--text-inverse);
 }
