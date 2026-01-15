@@ -14,4 +14,7 @@ export type InputProps = {
   righticons?: React.ReactNode;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   type: string;
+  id: string;
+  name: string;
+  defaultValue?: string | undefined;
 };

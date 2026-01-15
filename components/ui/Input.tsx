@@ -12,6 +12,9 @@ const Input = ({
   className = "",
   onChange,
   type = "text",
+  id,
+  name,
+  defaultValue,
 }: InputProps) => {
   return (
     <div className="flex flex-col items-start">
@@ -29,7 +32,10 @@ const Input = ({
         )}
 
         <input
+          id={id}
+          name={name}
           type={type}
+          defaultValue={defaultValue}
           className={`border-b ${
             sucess ? "w-full border-b-secondary-green" : "border-b-outline"
           } mt-1 pt-0.75 pb-3.25  focus:outline-0 placeholder:text-[14px] placeholder:font-bold w-64 placeholder:text-primary-dark ${className} `}
