@@ -24,7 +24,7 @@ export type FormState =
 
 export const SignUpActions = async (
   prevState: FormState,
-  formData: FormData
+  formData: FormData,
 ): Promise<FormState> => {
   const values = {
     fullName: String(formData.get("fullName") || ""),
@@ -50,6 +50,5 @@ export const SignUpActions = async (
     };
   }
 
-  return { message: "done", status: "ok" };
-  // redirect("/signin");
+  redirect("/signin");
 };

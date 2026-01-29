@@ -1,6 +1,7 @@
 "use Client";
 import { error, user } from "@/libs/icons";
 import { InputProps } from "@/types/type";
+import React from "react";
 
 const Input = ({
   label = "First Name",
@@ -16,6 +17,10 @@ const Input = ({
   name,
   defaultValue,
 }: InputProps) => {
+  const [eye, setEye] = React.useState(false);
+  const handleEye = () => {
+    setEye(!eye);
+  };
   return (
     <div className="flex flex-col items-start">
       <label
@@ -34,7 +39,7 @@ const Input = ({
         <input
           id={id}
           name={name}
-          type={type}
+          type={eye ? "text" : type}
           defaultValue={defaultValue}
           className={`border-b ${
             sucess ? "w-full border-b-secondary-green" : "border-b-outline"
@@ -46,7 +51,10 @@ const Input = ({
 
         {/* right icons */}
         {righticons && typeof righticons !== "boolean" && (
-          <div className="mt-1 absolute right-0 top-1/3 -translate-y-1/2">
+          <div
+            onClick={handleEye}
+            className="mt-1 absolute   right-0 top-1/3 -translate-y-1/2"
+          >
             {righticons}
           </div>
         )}

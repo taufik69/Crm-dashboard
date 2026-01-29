@@ -5,6 +5,7 @@ import { email, lock, user } from "@/libs/icons";
 import Button from "../ui/Button";
 import { SignUpActions } from "@/actions/auth";
 import { useActionState, useEffect, useState } from "react";
+import Link from "next/link";
 
 const SignupForm = () => {
   const [state, action, pending] = useActionState(SignUpActions, undefined);
@@ -38,7 +39,7 @@ const SignupForm = () => {
       <div className="w-full">
         <Input
           type="text"
-          label="Full name"
+          label="Full name *"
           placeholder="Craft UI"
           className="w-93.25 pt-1"
           id="fullName"
@@ -58,7 +59,7 @@ const SignupForm = () => {
       <div className="w-full">
         <Input
           type="email"
-          label="Email"
+          label="Email *"
           placeholder="support@craftui.com"
           className="w-93.25 pt-1"
           id="email"
@@ -75,7 +76,7 @@ const SignupForm = () => {
       {/* Password */}
       <div className="w-full">
         <Input
-          label="Password"
+          label="Password *"
           type="password"
           placeholder="Start typing…"
           className="w-93.25 pt-1"
@@ -119,12 +120,12 @@ const SignupForm = () => {
           {pending ? "loading..." : "Sign Up"}
         </Button>
 
-        <Button
-          btntype="button"
+        <Link
+          href="/signin"
           className="bg-primary/10 px-16 py-3 rounded text-primary font-bold"
         >
           Sign In
-        </Button>
+        </Link>
       </div>
 
       {state?.message && <p>{state.message}</p>}

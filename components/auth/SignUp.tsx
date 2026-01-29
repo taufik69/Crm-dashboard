@@ -18,8 +18,10 @@ const SignUp = () => {
         </div>
         <div>
           <Image
-            src={auth}
-            width={1000}
+            src={
+              "https://assets-v2.lottiefiles.com/a/0f2e3502-117b-11ee-95f6-2f0d9642453f/cpQ4tiuVIK.gif"
+            }
+            width={100}
             height={100}
             alt="auth image"
             className="h-full w-fit"
