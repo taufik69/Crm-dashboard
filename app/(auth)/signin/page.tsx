@@ -1,6 +1,8 @@
+import Button from "@/components/ui/Button";
 import PasswordKey from "@/components/ui/PasswordKey";
 import { EmailIcon, PasswordIcon } from "@/utils/iconsprovider";
 import Image from "next/image";
+import Link from "next/link";
 
 const SignIn = () => {
   return (
@@ -27,6 +29,7 @@ const SignIn = () => {
                 <div className="relative">
                   <input
                     type="email"
+                    name="email"
                     placeholder="john.doe@gmail.com"
                     className={` w-91.25 mt-1 pt-0.75 pb-3.25  focus:outline-0 placeholder:text-[14px] placeholder:font-bold  placeholder:text-primary-dark border-b border-b-[#ECECF2]`}
                   />
@@ -38,6 +41,22 @@ const SignIn = () => {
               {/* password */}
               <div>
                 <PasswordKey />
+              </div>
+
+              <div className="flex gap-x-2.25 mt-7">
+                <Button
+                  btntype="submit"
+                  className="bg-primary w-44.5 py-3 rounded text-white font-bold"
+                >
+                  Sign In
+                </Button>
+
+                <Link
+                  href="/signin"
+                  className="bg-primary/10 px-16 py-3 rounded text-primary font-bold"
+                >
+                  Sign Up
+                </Link>
               </div>
             </form>
           </div>
